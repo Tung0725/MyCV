@@ -3,159 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nguyen Duy Tung-CV</title>
+    <title>Nguyen Duy Tung - CV</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <canvas id="snow-canvas"></canvas>
     <header>
-        <img src="https://upload.wikimedia.org/wikipedia/vi/thumb/2/2d/Logo_Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_FPT.svg/2560px-Logo_Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_FPT.svg.png" alt="FPT University Logo" class="logo">
-        <div>
+        <div class="header-left">
+            <img src="https://upload.wikimedia.org/wikipedia/vi/thumb/2/2d/Logo_Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_FPT.svg/2560px-Logo_Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_FPT.svg.png" alt="FPT University Logo" class="logo">
+        </div>*
+        <div class="header-center">
+            <!--img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Avatar Nguyen Duy Tung" class="avatar">-->
             <h1>Nguyen Duy Tung</h1>
             <p class="intro">FPT University student. I am 20 years old and live in Lam Dong city.</p>
+            <p class="career-objective">
+                <strong>Career Objective:</strong> 
+                To become a skilled software engineer, contributing to innovative projects and continuous self-development.
+            </p>
+        </div>
+        <div class="header-right">
+            <a href="CV_NguyenDuyTung.pdf" download class="download-cv" aria-label="Download CV PDF">📄 Download CV</a>
         </div>
     </header>
 
     <main>
-        <section class="content">
-            <article class="section">
-                <h2>Books and Teaching</h2>
-                <p>Some areas I am passionate about teaching and learning:</p>
-                <ul>
-                    <li>Music notation and lyric writing</li>
-                    <li>Reading music</li>
-                    <li>Using technology to enhance life</li>
-                </ul>
-            </article>
+        <section class="section contact-section">
+            <h2>Contact</h2>
+            <ul class="contact-list">
+                <li><span>🏠</span> Phuc Tho, Lam Dong</li>
+                <li><span>🏠</span> Truong Thanh, Thu Duc, Ho Chi Minh City</li>
+                <li><span>📞</span> <a href="tel:0379624371">0379 624 371</a></li>
+                <li><span>✉️</span> <a href="mailto:duytung200575456@gmail.com">duytung200575456@gmail.com</a></li>
+                <li class="social-links">
+                    <a href="https://facebook.com/" target="_blank" aria-label="Facebook">Facebook</a> |
+                    <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+                </li>
+            </ul>
+        </section>
 
-            <article class="section">
-                <h2>Hobbies</h2>
-                <p>Programming languages I am learning:</p>
-                <ol>
-                    <li>Learning Java</li>
-                    <li>Learning C++</li>
-                </ol>
-            </article>
+        <section class="section skills-section">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>Java, C++ (Basic)</li>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Teamwork & Communication</li>
+                <li>Problem Solving</li>
+                <li>English (Intermediate)</li>
+            </ul>
+        </section>
 
-            
+        <section class="section experience-section">
+            <h2>Work Experience</h2>
+            <ul class="experience-list">
+                <li>
+                    <strong>2024 - Present:</strong> Member, FPT University IT Club<br>
+                    <em>Participated in coding competitions and supported club events.</em>
+                </li>
+                <li>
+                    <strong>2023 - 2024:</strong> Volunteer, Community Tech Project<br>
+                    <em>Helped local students learn basic programming and computer skills.</em>
+                </li>
+            </ul>
+        </section>
 
-            <article class="section">
-                <h2>Education</h2>
-                <table>
-                    <tr>
-                        <th>Date</th>
-                        <th>Details</th>
-                    </tr>
-                    <tr>
-                        <td>2011-2016</td>
-                        <td>Phuc Tho 1 Primary School</td>
-                    </tr>
-                    <tr>
-                        <td>2016-2020</td>
-                        <td>Hoai Duc Secondary School</td>
-                    </tr>
-                    <tr>
-                        <td>2020-2023</td>
-                        <td>Huynh Thuc Khang High School</td>
-                    </tr>
-                    <tr>
-                        <td>2023-2027</td>
-                        <td>FPT University HCM Campus</td>
-                    </tr>
-                </table>
-            </article>
-            <article class="section">
-                <h2>Contact</h2>
-                <form autocomplete="on">
-                    <label for="name">Full Name:</label><br>
-                    <input type="text" id="name" name="name" required placeholder="Your full name"><br>
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email" required placeholder="you@example.com"><br>
-                    <label for="message">Message:</label><br>
-                    <textarea id="message" name="message" rows="4" required placeholder="Your message"></textarea><br>
-                    <button type="submit">Send</button>
-                </form>
-                <p><strong>Address 1:</strong> Phuc Tho, Lam Dong</p>
-                <p><strong>Address 2:</strong> Truong Thanh, Thu Duc, Ho Chi Minh City</p>
-                <p><strong>Phone:</strong> 0379 624 371</p>
-                <p><strong>Email:</strong> <a href="mailto:duytung200575456@gmail.com">duytung200575456@gmail.com</a></p>
-                <div class="social-links">
-                    <a href="https://facebook.com/" target="_blank">Facebook</a> |
-                    <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
-                </div>
-            </article>
+        <section class="section education-section">
+            <h2>Education</h2>
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td>2011-2016</td>
+                    <td>Phuc Tho 1 Primary School</td>
+                </tr>
+                <tr>
+                    <td>2016-2020</td>
+                    <td>Hoai Duc Secondary School</td>
+                </tr>
+                <tr>
+                    <td>2020-2023</td>
+                    <td>Huynh Thuc Khang High School</td>
+                </tr>
+                <tr>
+                    <td>2023-2027</td>
+                    <td>FPT University HCM Campus</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="section books-section">
+            <h2>Books and Teaching</h2>
+            <ul>
+                <li>Music notation and lyric writing</li>
+                <li>Reading music</li>
+                <li>Using technology to enhance life</li>
+            </ul>
+        </section>
+
+        <section class="section hobbies-section">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Learning Java</li>
+                <li>Learning C++</li>
+                <li>Playing piano</li>
+                <li>Reading books</li>
+            </ul>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Nguyen Duy Tung. All rights reserved.</p>
     </footer>
-</body>
-<!-- ...existing code... -->
-<canvas id="snow-canvas"></canvas>
-<script>
-const canvas = document.getElementById('snow-canvas');
-const ctx = canvas.getContext('2d');
-let width = window.innerWidth;
-let height = window.innerHeight;
-canvas.width = width;
-canvas.height = height;
-canvas.style.position = 'fixed';
-canvas.style.top = 0;
-canvas.style.left = 0;
-canvas.style.pointerEvents = 'none';
-canvas.style.zIndex = 1000;
-canvas.style.width = '100vw';
-canvas.style.height = '100vh';
 
-let snowflakes = [];
-function createSnowflakes() {
-    snowflakes = [];
-    for (let i = 0; i < 80; i++) {
-        snowflakes.push({
-            x: Math.random() * width,
-            y: Math.random() * height,
-            r: Math.random() * 3 + 1,
-            d: Math.random() * 1 + 0.5
-        });
-    }
-}
-function drawSnowflakes() {
-    ctx.clearRect(0, 0, width, height);
-    for (let i = 0; i < snowflakes.length; i++) {
-        let f = snowflakes[i];
-        // Tạo màu pastel ngẫu nhiên cho từng bông tuyết
-        let hue = (f.x + f.y) % 360;
-        ctx.beginPath();
-        ctx.arc(f.x, f.y, f.r, 0, Math.PI * 2, true);
-        ctx.fillStyle = `hsla(${hue}, 80%, 80%, 0.85)`;
-        ctx.shadowColor = `hsla(${hue}, 80%, 80%, 0.7)`;
-        ctx.shadowBlur = 8;
-        ctx.fill();
-        ctx.shadowBlur = 0;
-    }
-    moveSnowflakes();
-}
-function moveSnowflakes() {
-    for (let i = 0; i < snowflakes.length; i++) {
-        let f = snowflakes[i];
-        f.y += f.d;
-        f.x += Math.sin(f.y * 0.01) * 0.6;
-        if (f.y > height) {
-            f.y = -5;
-            f.x = Math.random() * width;
-        }
-    }
-}
-function updateSize() {
-    width = window.innerWidth;
-    height = window.innerHeight;
+    <!-- Hiệu ứng tuyết rơi nhiều màu -->
+    <script>
+    const canvas = document.getElementById('snow-canvas');
+    const ctx = canvas.getContext('2d');
+    let width = window.innerWidth;
+    let height = window.innerHeight;
     canvas.width = width;
     canvas.height = height;
+    canvas.style.position = 'fixed';
+    canvas.style.top = 0;
+    canvas.style.left = 0;
+    canvas.style.pointerEvents = 'none';
+    canvas.style.zIndex = 1000;
+    canvas.style.width = '100vw';
+    canvas.style.height = '100vh';
+
+    let snowflakes = [];
+    function createSnowflakes() {
+        snowflakes = [];
+        for (let i = 0; i < 80; i++) {
+            snowflakes.push({
+                x: Math.random() * width,
+                y: Math.random() * height,
+                r: Math.random() * 3 + 1,
+                d: Math.random() * 1 + 0.5
+            });
+        }
+    }
+    function drawSnowflakes() {
+        ctx.clearRect(0, 0, width, height);
+        for (let i = 0; i < snowflakes.length; i++) {
+            let f = snowflakes[i];
+            // Bông tuyết màu pastel rực rỡ
+            let hue = (f.x + f.y + Date.now()/40) % 360;
+            ctx.beginPath();
+            ctx.arc(f.x, f.y, f.r, 0, Math.PI * 2, true);
+            ctx.fillStyle = `hsla(${hue}, 90%, 75%, 0.85)`;
+            ctx.shadowColor = `hsla(${hue}, 90%, 75%, 0.7)`;
+            ctx.shadowBlur = 10;
+            ctx.fill();
+            ctx.shadowBlur = 0;
+        }
+        moveSnowflakes();
+    }
+    function moveSnowflakes() {
+        for (let i = 0; i < snowflakes.length; i++) {
+            let f = snowflakes[i];
+            f.y += f.d;
+            f.x += Math.sin(f.y * 0.01) * 0.6;
+            if (f.y > height) {
+                f.y = -5;
+                f.x = Math.random() * width;
+            }
+        }
+    }
+    function updateSize() {
+        width = window.innerWidth;
+        height = window.innerHeight;
+        canvas.width = width;
+        canvas.height = height;
+        createSnowflakes();
+    }
+    window.addEventListener('resize', updateSize);
     createSnowflakes();
-}
-window.addEventListener('resize', updateSize);
-createSnowflakes();
-setInterval(drawSnowflakes, 30);
-</script>
-<!-- ...existing code... -->
+    setInterval(drawSnowflakes, 30);
+    </script>
+</body>
 </html>
